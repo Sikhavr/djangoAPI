@@ -11,5 +11,12 @@ urlpatterns = [
     path('books_by_date', BookListFilter.as_view(), name='books_by_date'),
     path('book_details/', BookDetails.as_view(), name='book_details'),
     path('book_details/<int:book_id>', BookDetails.as_view(), name='book_details'),
+    path('register',registerView.as_view(),name='reg'),
+    path('login',loginView.as_view(),name='login'),
+    path('getuserdetails',UserDetailsView.as_view(),name='getuserdetails'),
+    path('addDetails',addDetailsView.as_view(),name='addDetails'),
+
+    
+
 
 ]
